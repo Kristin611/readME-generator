@@ -1,10 +1,20 @@
 // TODO: Include packages needed for this application
-
+const generateMarkdown = require('./utils/generateMarkdown') //importing 
 const inquirer = require('inquirer')
 const fs = require('fs')
+const path = require('path')
 
-// TODO: Create an array of questions for user input
-inquirer
+
+
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFileSync(path.join(fileName), data)
+}
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer
     .prompt([
         {
             type: 'input',
@@ -19,12 +29,26 @@ inquirer
         {
             type: 'input',
             message: 'Provide a step-by-step description of how to install your application.',
-            name: 'installation'
+            name: 'install'
         },
         {
             type: 'input',
             message: 'Provide instructions and examples of use.',
             name: 'usage'
+        },
+        {
+            type: 'list',
+            message: 'Select the license for your application.',
+            name: 'license',
+            choices: [
+                'MIT',
+                'Apache License 2.0',
+                'GNU General Public License v3.0',
+                'Creative Commons Zero v1.0 Universal',
+                'BSD-2 Clause Simplified License',
+                'Mozilla Public License 2.0'
+            ]
+
         },
         {
             type: 'input',
@@ -47,12 +71,22 @@ inquirer
             name: 'email'
         }
     ])
+    .then((responses) => {
+        const appTitle = responses.title;
+        const description = responses.description;
+        const install = responses.install;
+        const usage = responses.usage;
+        const license = responses.license;
+        const contribute = responses.contribute;
+        const tests = responses.tests;
+        const github = responses.github;
+        const email = responses.email;
+        console.log({...responses})
+        //const htmlContent = 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
+        writeToFile('README.md', generateMarkdown({...responses})) //spread operator
+    })
+}
 
 // Function call to initialize app
 init();
