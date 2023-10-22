@@ -44,10 +44,7 @@ function init() {
             choices: [
                 'MIT',
                 'Apache License 2.0',
-                'GNU General Public License v3.0',
-                'Creative Commons Zero v1.0 Universal',
-                'BSD-2 Clause Simplified License',
-                'Mozilla Public License 2.0'
+                'GNU General Public License v3.0'
             ]
 
         },
