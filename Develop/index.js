@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const generateMarkdown = require('./utils/generateMarkdown') //importing 
+//const renderLicenseBadge = require('./utils/generateMarkdown') 
 const inquirer = require('inquirer')
 const fs = require('fs')
 const path = require('path')
@@ -77,6 +78,7 @@ function init() {
         const install = responses.install;
         const usage = responses.usage;
         const license = responses.license;
+        //const badge = renderLicenseBadge();
         const contribute = responses.contribute;
         const tests = responses.tests;
         const github = responses.github;

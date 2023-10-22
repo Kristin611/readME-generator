@@ -1,4 +1,4 @@
-# k
+# k 
   ## Description: 
     k
 
@@ -14,7 +14,7 @@
     k
 
   ## License 
-    k
+    MIT
 
   ## Contribute:
     k
@@ -24,8 +24,8 @@
  
   ## Questions?
 
-    # GitHub Profile: k
-    # Email: k
+    GitHub Profile: k
+    Email: k
 
 
 
