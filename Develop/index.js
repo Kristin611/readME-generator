@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
-const generateMarkdown = require('./utils/generateMarkdown') //importing 
-//const renderLicenseBadge = require('./utils/generateMarkdown') 
+const generateMarkdown = require('./utils/generateMarkdown') //importing  
 const inquirer = require('inquirer')
 const fs = require('fs')
 const path = require('path')
@@ -14,7 +13,7 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {
+function init() { //starter function
     inquirer
     .prompt([
         {
@@ -44,7 +43,8 @@ function init() {
             choices: [
                 'MIT',
                 'Apache License 2.0',
-                'GNU General Public License v3.0'
+                'GNU General Public License v3.0',
+                'none'
             ]
 
         },
@@ -75,13 +75,12 @@ function init() {
         const install = responses.install;
         const usage = responses.usage;
         const license = responses.license;
-        //const badge = renderLicenseBadge();
         const contribute = responses.contribute;
         const tests = responses.tests;
         const github = responses.github;
         const email = responses.email;
         console.log({...responses})
-        //const htmlContent = 
+        
 
         writeToFile('README.md', generateMarkdown({...responses})) //spread operator
     })
