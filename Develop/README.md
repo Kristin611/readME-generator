@@ -1,6 +1,6 @@
-# k [![License: MIT](http://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# GrocerEZ [![License: MIT](http://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description: 
-    k
+    The application is to make grocery shopping easy!
   ## Table of Contents: 
   * [Installation](#installation)
 
@@ -15,21 +15,16 @@
 * [License](#license)
 
   ## Installation {#installation}
-    k
+    Please refer to GitHub resources.
   ## Usage {#usage}
-    k
+    Use at the grocery store!
   ## License 
     This project is licensed under MIT.
   ## Contribute: {#contributing}
-    k
+    Clone the repo!
   ## Tests {#tests}
-    k 
+    This is a test. 
   ## Questions? {#questions}
-    GitHub Profile: k
-    Email: k
-
-
-
-
-
-
+    If you have additional questions about my application, please contact me below:
+    GitHub Profile: www.github.com/kristin611
+    Email: kristin@gmail.com
