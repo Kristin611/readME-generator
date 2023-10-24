@@ -69,7 +69,7 @@ function init() { //starter function
             name: 'email'
         }
     ])
-    .then((responses) => {
+    .then((responses) => { //user responses saved in variables below
         const appTitle = responses.title;
         const description = responses.description;
         const install = responses.install;
