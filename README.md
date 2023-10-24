@@ -9,3 +9,6 @@ To generate the structure of the README file, I used the template below:
 
 Below is the link to the walk-through video of my application:
 
+https://drive.google.com/file/d/18sSmF5cwWLL9-aDNlkCU7RH3Ik5mnCAL/view?usp=sharing
+
+
